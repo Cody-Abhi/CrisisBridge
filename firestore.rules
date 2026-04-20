@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // ── Helper Functions ──────────────────────────────────────────────────
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isAuthenticated() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // ── Collection Rules ──────────────────────────────────────────────────
+
+    match /users/{userId} {
+      allow read, write: if isAuthenticated();
+    }
+
+    match /hotels/{hotelCode} {
+      allow read, write: if isAuthenticated();
+    }
+
+    match /incidents/{incidentId} {
+      allow read, write: if isAuthenticated();
+    }
+
+    match /staff_requests/{requestId} {
+      allow read, write: if isAuthenticated();
+    }
+
+    match /chats/{channelId} {
+      allow read, write: if isAuthenticated();
+      match /messages/{messageId} {
+        allow read, write: if isAuthenticated();
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+    --accent: 7 71% 51%;
+    --accent-foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 6%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 7 71% 51%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  
+  body { 
+    @apply antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    margin: 0; 
+    font-family: 'Outfit', 'Inter', sans-serif; 
+    overflow-x: hidden;
+  }
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-slate-950/40 backdrop-blur-xl border border-white/20 dark:border-white/5;
+  }
+
+  .glass-dark {
+    @apply bg-slate-950/60 backdrop-blur-2xl border border-white/5 shadow-2xl;
+  }
+
+  .glass-accent {
+    @apply bg-cs-red/5 backdrop-blur-md border border-cs-red/20;
+  }
+
+  .premium-shadow {
+    box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .premium-shadow {
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-slate-900 via-slate-800 to-slate-600 dark:from-white dark:via-blue-100 dark:to-blue-200;
+  }
+
+  .sos-glow {
+      box-shadow: 0 0 30px 2px rgba(220, 38, 38, 0.3);
+  }
+
+  .sos-fire     { @apply bg-[#DC2626] animate-sos-pulse shadow-lg shadow-red-500/30; }
+  .sos-medical  { @apply bg-[#10b981] shadow-lg shadow-emerald-500/30; }
+  .sos-security { @apply bg-[#f59e0b] shadow-lg shadow-amber-500/30; }
+  .sos-common   { @apply bg-[#8b5cf6] shadow-lg shadow-violet-500/30; }
+
+  .btn-premium {
+    @apply relative overflow-hidden px-6 py-3 rounded-xl font-bold transition-all duration-300 active:scale-95 flex items-center justify-center gap-2;
+  }
+}
+
+@layer utilities {
+  .animate-pulse-subtle {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes sos-pulse {
+    0%, 100% { 
+      transform: scale(1); 
+      box-shadow: 0 0 20px 0 rgba(220, 38, 38, 0.7), inset 0 0 10px rgba(255, 255, 255, 0.2); 
+    }
+    50% { 
+      transform: scale(1.05); 
+      box-shadow: 0 0 40px 15px rgba(220, 38, 38, 0), inset 0 0 20px rgba(255, 255, 255, 0); 
+    }
+  }
+
+  @keyframes ripple {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+  }
+
+  .animate-ripple {
+    animation: ripple 3s linear infinite;
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-4px); }
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors;
+  }
+}
+
+
