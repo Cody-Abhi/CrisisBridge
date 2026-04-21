@@ -15,8 +15,6 @@
   },
   "hosting": {
     "public": "dist",
-    "site": "crisisbridgev1",
-    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
