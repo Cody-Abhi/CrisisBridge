@@ -4,7 +4,7 @@
 
 <br/>
 
-# 🆘 Crisis Bridge
+#  Crisis Bridge
 
 ### *One Tap. Every Responder. Zero Delay.*
 
