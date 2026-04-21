@@ -12,12 +12,15 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-crisis--bridge.web.app-red?style=for-the-badge)](https://crisis-bridge.web.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-crisis--bridge.web.app-red?style=for-the-badge)](https://crisisbridgev1.web.app/)
 &nbsp;
+
 [![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 &nbsp;
+
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 &nbsp;
+
 [![Gemini AI](https://img.shields.io/badge/Gemini_1.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
 </div>
@@ -53,15 +56,15 @@ From tap to staff acknowledgment: **under 2 seconds.**
 ## 🎥 Demo
 
 > 📹 **[Watch the 2-minute demo →](#)**  
-> 🌐 **[Try the live app →](https://crisis-bridge.web.app)**
+> 🌐 **[Try the live app →](https://crisisbridgev1.web.app/)**
 
 **Quick login credentials for judges:**
 
 | Role | Email | Password |
 |---|---|---|
-| 👤 Guest | `guest@demo.com` | `demo1234` |
-| 🧑‍🚒 Staff | `staff@demo.com` | `demo1234` |
-| 🛡️ Admin | `admin@demo.com` | `demo1234` |
+| 👤 Guest | `demoguest@demo.com` | `demo1234` |
+| 🧑‍🚒 Staff | `demostaff@demo.com` | `demo1234` |
+| 🛡️ Admin | `demoadmin@demo.com` | `demo1234` |
 
 ---
 
