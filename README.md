@@ -215,12 +215,14 @@ npm run dev   # → http://localhost:5173
 
 ## 👨‍💻 The Team
 
-Built at [Hackathon Name].
+Built at Clt Alt Elite.
 
 | | Name | Role |
 |---|---|---|
-| 🧠 | Cody | Full Stack & Firebase Architecture |
-| ⚡ | Abhi | Frontend, UI/UX & AI Integration |
+| ⚡ | Aakanksha Mishra | Full Stack, Frontend Designer |
+| 🧠 | Aastha Dubey | Frontend, UI/UX |
+| 🧠 | Abhinav Srivastava | Backend, Firebse configuration |
+
 
 ---
 
