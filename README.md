@@ -217,11 +217,11 @@ npm run dev   # → http://localhost:5173
 
 Built at Clt Alt Elite.
 
-| | Name | Role |
-|---|---|---|
-| ⚡ | Aakanksha Mishra | Frontend Designer |
-| 🧠 | Aastha Dubey | Frontend, UI/UX |
-| 🧠 | Abhinav Srivastava | Backend, Firebse configuration |
+| | Name | Role | Github |
+|---|---|---|---|
+| ⚡ | Aakanksha Mishra | Frontend Designer | [Github](https://github.com/Akanksha549) |
+| 🧠 | Aastha Dubey | Frontend, UI/UX | [Github](https://github.com/Astha0129) |
+| 🛠️ | Abhinav Srivastava | Backend, Firebse configuration | [Github](https://github.com/Cody-Abhi) |
 
 
 ---
