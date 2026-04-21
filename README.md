@@ -13,14 +13,11 @@
 <br/>
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-crisis--bridge.web.app-red?style=for-the-badge)](https://crisisbridgev1.web.app/)
-&nbsp;
-
+&nbsp; 
 [![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-&nbsp;
-
+&nbsp; 
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
-&nbsp;
-
+&nbsp; 
 [![Gemini AI](https://img.shields.io/badge/Gemini_1.5_Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
 </div>
