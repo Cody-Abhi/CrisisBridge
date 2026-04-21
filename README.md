@@ -219,7 +219,7 @@ Built at Clt Alt Elite.
 
 | | Name | Role |
 |---|---|---|
-| ⚡ | Aakanksha Mishra | Full Stack, Frontend Designer |
+| ⚡ | Aakanksha Mishra | Frontend Designer |
 | 🧠 | Aastha Dubey | Frontend, UI/UX |
 | 🧠 | Abhinav Srivastava | Backend, Firebse configuration |
 
