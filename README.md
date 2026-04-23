@@ -52,7 +52,7 @@ From tap to staff acknowledgment: **under 2 seconds.**
 
 ## 🎥 Demo
 
-> 📹 **[Watch the 2-minute demo →](#)**  
+> 📹 **[Watch the 2-minute demo →](https://youtu.be/ZW8ssyYhrDk?si=0d0xFxjkKpkajTn-)**  
 > 🌐 **[Try the live app →](https://crisisbridgev1.web.app/)**
 
 **Quick login credentials for judges:**
