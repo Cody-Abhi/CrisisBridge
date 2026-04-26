@@ -60,7 +60,7 @@ From tap to staff acknowledgment: **under 2 seconds.**
 | Role | Email | Password |
 |---|---|---|
 | 👤 Guest | `demoguest@demo.com` | `demo1234` |
-| 🧑‍🚒 Staff | `demostaff@demo.com` | `demo1234` |
+| 🧑‍🚒 Staff | `demostaff1@demo.com` | `demo1234` |
 | 🛡️ Admin | `demoadmin@demo.com` | `demo1234` |
 
 ---
